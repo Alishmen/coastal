@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="icon" href="/favicon/icon-16.png" type="image/x-icon">
+    <link rel="stylesheet" href="./styles/normalize.css">
+    <link rel="stylesheet" href="./styles/reset.css">
+    <link rel="stylesheet" href="./styles/main.css">
+    <script defer src="./main.js"></script>
+    <title>coastal</title>
+</head>
+
+<body>
+    <header class="header">
+        <div class="header__content">
+            <a href="/#" class="logo" title="Contact">coastal</a>
+            <div class="header__menu menu">
+                <div class="menu__icon">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </div>
+                <nav class="menu__body">
+                    <ul class="menu__list">
+                        <li class="menu__item">
+                            <a href="#hero" class="menu__link" title="Home section">Home</a>
+                        </li>
+                        <li class="menu__item">
+                            <a href="#advantages" class="menu__link" title="Advantages section">Advantages</a>
+                        </li>
+                        <li class="menu__item">
+                            <a href="#contact" class="menu__link" title="Contact section">Contact</a>
+                        </li>
+                    </ul>
+                </nav>
+            </div>
+        </div>
+    </header>
+
+    <main class="main">
+        <section id="hero" class="hero">
+            <div class="hero__content-wrapper">
+                <div class="hero__content">
+                    <h1 class="hero__title">Luxury apartments by the sea</h1>
+                    <p class="hero__subtitle">Make your dream of living by the sea come true</p>
+                    <ul class="hero__list">
+                        <li class="hero__item text">from &dollar;10&nbsp;000 down&nbsp;payment</li>
+                        <li class="hero__item text">30&percnt; cost growth after construction</li>
+                        <li class="hero__item text">annual profitability&nbsp;is&nbsp;17&percnt;</li>
+                    </ul>
+                    <button aria-label="Order coastal" type="button" class="button">Order</button>
+                </div>
+            </div>
+            <img class="hero__img" src="./images/hero-picture.jpeg" loading="lazy" width="896" height="1152"
+                alt="Beautiful sea views from the best apartments of our company">
+        </section>
+
+        <section id="advantages" class="advantages">
+            <h2 style="display: none;">Advantages of the company</h2>
+            <img class="advantages__img" src="./images/advantages-picture-left.jpeg" loading="lazy" width="768" height="1344"
+                alt="Stunning view of the apartments that are right by the sea">
+            <div class="advantages__content">
+                <ul class="advantages__list">
+                    <li class="advantages__list-item">Apartments with sea views are luxury properties that combine comfort</li>
+                    <li class="advantages__list-item">Rent apartments to tourists and earn a steady income</li>
+                    <li class="advantages__list-item">The sea air, mild climate and beach holidays right on the doorstep</li>
+                    <li class="advantages__list-item">Real estate by the sea is always increasing in price</li>
+                </ul>
+                <button aria-label="Order coastal" type="button" class="button">Order</button>
+            </div>
+            <img class="advantages__img" src="./images/advantages-picture-right.jpeg" loading="lazy" width="768" height="1344"
+                alt="View of an incredible apartment with its own swimming pool">
+        </section>
+
+        <section id="contact" class="contact">
+            <div class="contact__content-wrapper">
+                <div class="contact__content">
+                    <h2 class="contact__title">Subscribe<br>to the contact</h2>
+                    <form class="contact__form">
+                        <div class="contact__input-box">
+                            <input name="Name" class="contact__input" type="text" autocomplete="on"
+                                placeholder="Name" id="Name" required>
+                            <input name="E-mail" class="contact__input" type="email" autocomplete="on"
+                                placeholder="E-mail" id="E-mail" required>
+                        </div>
+                        <div class="contact__checkbox-box">
+                            <input name="Privacy-policy" class="contact__checkbox" type="checkbox"
+                                id="Privacy-policy" required>
+                            <label class="contact__label-checkbox" for="Privacy-policy">
+                                I accept Privacy policy
+                            </label>
+                        </div>
+                        <button aria-label="Subscribe to the contact" type="submit"
+                            class="contact__button button">Submit Form</button>
+                    </form>
+                </div>
+                <div class="contact__img">
+                    <img class="contact__background" src="./images/contact-picture.jpeg" loading="lazy"
+                        width="1024" height="1024"
+                        alt="Amazing sea view from the dining area">
+                </div>
+            </div>
+            <img class="contact__woman" src="./images/contact-woman.png" loading="lazy" width="381" height="500" alt="Woman">
+        </section>
+    </main>
+
+    <footer class="footer">
+        <nav class="footer__nav">
+            <ul class="footer__nav-list">
+                <li class="footer__nav-item"><a href="#hero" title="Home section">Home</a></li>
+                <li class="footer__nav-item"><a href="#advantages" title="Advantages section">Advantages</a></li>
+                <li class="footer__nav-item"><a href="#contact" title="Contact section">Contact</a></li>
+            </ul>
+        </nav>
+
+        <div class="footer__content-wrapper">
+            <div class="footer__content">
+                <a href="#" class="footer__logo logo" title="coastal">coastal</a>
+                <ul class="footer__social">
+                    <li class="footer__social-item">
+                        <a href="https://www.instagram.com/" target="_blank" rel="noreferrer" title="Instagram">
+                            <svg width="32" height="32" aria-hidden="true">
+                                <use class="social__svg" href="./icons/sprite.svg#instagram"></use>
+                            </svg>
+                        </a>
+                    </li>
+                    <li class="footer__social-item">
+                        <a href="https://www.tiktok.com/" target="_blank" rel="noreferrer" title="TikTok">
+                            <svg width="32" height="32" aria-hidden="true">
+                                <use class="social__svg" href="./icons/sprite.svg#tiktok"></use>
+                            </svg>
+                        </a>
+                    </li>
+                    <li class="footer__social-item">
+                        <a href="https://linkedin.com/" target="_blank" rel="noreferrer" title="LinkedIn">
+                            <svg width="32" height="32" aria-hidden="true">
+                                <use class="social__svg" href="./icons/sprite.svg#linkedin"></use>
+                            </svg>
+                        </a>
+                    </li>
+                    <li class="footer__social-item">
+                        <a href="https://www.facebook.com/" target="_blank" rel="noreferrer" title="Facebook">
+                            <svg width="32" height="32" aria-hidden="true">
+                                <use class="social__svg" href="./icons/sprite.svg#facebook"></use>
+                            </svg>
+                        </a>
+                    </li>
+                    <li class="footer__social-item">
+                        <a href="https://web.telegram.org/" target="_blank" rel="noreferrer" title="Telegram">
+                            <svg width="32" height="32" aria-hidden="true">
+                                <use class="social__svg" href="./icons/sprite.svg#telegram"></use>
+                            </svg>
+                        </a>
+                    </li>
+                    <li class="footer__social-item">
+                        <a href="https://www.youtube.com/" target="_blank" rel="noreferrer" title="YouTube">
+                            <svg width="32" height="32" aria-hidden="true">
+                                <use class="social__svg" href="./icons/sprite.svg#youtube"></use>
+                            </svg>
+                        </a>
+                    </li>
+                </ul>
+                <button aria-label="Order coastal" type="button" class="button">Order</button>
+            </div>
+            <div class="footer__bottom">
+                <p>&copy; 2024, Copyright</p>
+                <a href="#!" title="Privacy policy">Privacy policy</a>
+                <a href="#!" title="Terms of use">Terms of use</a>
+            </div>
+        </div>
+    </footer>
+</body>
+
+</html>
