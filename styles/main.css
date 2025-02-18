@@ -448,6 +448,9 @@ main {
 .footer__nav-item a{
     color: var(--light-color);
 }
+.footer__nav-item a:hover{
+    color: var(--focus-color);
+}
 
 .footer {
     background-color: var(--black-section-color);
