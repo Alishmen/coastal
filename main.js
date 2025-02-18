@@ -1,29 +1,24 @@
 const menu = document.querySelector('.menu__body'),
         menuBtn = document.querySelector('.menu__icon'),
-        header = document.querySelector(".header"),
-        body = document.body;
+        header = document.querySelector(".header");
 
 if (menu && menuBtn) {
     menuBtn.addEventListener('click',() => {
         menu.classList.toggle('active')
         menuBtn.classList.toggle('active')
-        body.classList.toggle('lock')
+    })
+
+    menu.querySelectorAll('.menu__link').forEach(link => {
+        link.addEventListener('click', () => {
+            menu.classList.remove('active')
+            menuBtn.classList.remove('active')
+        })
     })
 }
 
 window.addEventListener("scroll", () => {
     header.classList.toggle("header-color", window.scrollY > 40);
 });
-
-
-let isScrolling;
-window.addEventListener("scroll", () => {
-    window.clearTimeout(isScrolling);
-    isScrolling = setTimeout(() => {
-        header.classList.toggle("header-color", window.scrollY > 40);
-    }, 100);
-});
-
 
 document.querySelector('#E-mail').addEventListener('blur', function() {
     const email = this.value;
