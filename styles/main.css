@@ -447,6 +447,11 @@ main {
 
 .footer__nav-item a{
     color: var(--light-color);
+    transition: color 0.2s ease-in-out;
+    -webkit-transition: color 0.2s ease-in-out;
+    -moz-transition: color 0.2s ease-in-out;
+    -ms-transition: color 0.2s ease-in-out;
+    -o-transition: color 0.2s ease-in-out;
 }
 .footer__nav-item a:hover{
     color: var(--focus-color);
